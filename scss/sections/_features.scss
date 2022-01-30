@@ -1,0 +1,71 @@
+.features{
+    color: $black;
+    background-color: $lightestBlue;
+    .content {
+        padding: 100px 0;
+        > h2 {
+            text-align: center;
+            margin: 0 auto 2em auto;
+        }
+    }
+    .items {
+        display: flex;
+        gap: 60px;
+        justify-content: space-between;
+        margin: 30px auto;
+        .item {
+            width: 33.33%;
+            display: flex;
+            flex-direction: column;
+        }
+        .circle {
+            width: 240px;
+            height: 240px;
+            border-radius: 50%;
+            overflow: hidden;
+            position: relative;
+            filter: drop-shadow(3px 5px 23px rgba(0, 0, 0, 0.13));
+            img {
+                display: block;
+                width: 124%;
+                height: auto;
+                position: absolute;
+                top: -10%;
+                left: -10%;
+                right: 0;
+                bottom: 0;
+            }
+        }
+        h4 {
+            font-size: 24px;
+            font-weight: 500;
+        }
+        .description {
+            font-size: 18px;
+        }     
+    }
+
+    @media (max-width: 1024px) {
+        .content {
+            padding: 70px 0;
+        }
+        .items {
+            gap: 30px;
+            .circle {
+                width: 150px;
+                height: 150px;
+            }
+        }
+    }
+    @media (max-width: 640px) {
+        .items {
+            flex-direction: column;
+            gap: 80px;
+            .item {
+                width: 100%;
+                align-items: center;
+                text-align: center;
+            }
+        }
+    }
+}

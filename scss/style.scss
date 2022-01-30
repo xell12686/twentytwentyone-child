@@ -1,0 +1,24 @@
+/*
+Theme Name: Globally Paid - Twenty Twenty One Child Theme
+Theme URI: https://dev500dtest6.wpengine.com/
+Description: A child theme for Twenty Twenty One to match Globally Paid design
+Author: Your Name
+Author URI: https://dev500dtest6.wpengine.com/
+Template: twentytwentyone
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+@import 'base/normalize';
+@import 'base/typography';
+@import 'base/colors';
+@import 'base/page';
+@import 'base/animations';
+@import 'base/footer';
+
+@import 'components/button';
+
+@import 'sections/hero';
+@import 'sections/lead_capture';
+@import 'sections/features';

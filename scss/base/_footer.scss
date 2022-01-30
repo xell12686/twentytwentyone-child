@@ -1,0 +1,117 @@
+.site-footer {
+    background-color: $darkBlue;
+    color: white;
+    .content {
+        padding: 80px 0;
+        display: flex;
+        gap: 80px;
+        justify-content: space-between;
+        font-weight: 300;
+        a {
+            text-decoration: none;
+            color: white;
+            font-size: 14px;
+            line-height: 30px;
+            transition: 0.3s;
+            &:hover {
+                opacity: .7;
+            }
+        }
+        @media (max-width: 768px) {
+            gap: 40px;
+        }
+        @media (max-width: 640px) {
+            flex-direction: column;
+        }
+    }
+    .left-col {
+        max-width: 500px;
+        flex: 1;
+        ul {
+            list-style-type: none;
+        }
+    }
+    .right-col {
+        max-width: 410px;
+        flex: 1;
+        h4 {
+            font-size: 22px;
+            margin: 0 auto 45px auto;
+        }
+    }
+    .opt-in {
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+        > span {
+            font-weight: 400;
+            font-size: 15px;
+            opacity: .6;
+        }
+        label {
+            display: block;
+            position: relative;
+        }
+        input[type="text"] {
+            background-color: $grey;
+            border-width: 0px 0px 0px 0px;
+            border-radius: 50px 50px 50px 50px;
+            border: none;
+            padding: 12px 15px;
+            display: block;
+            width: 100%;
+            font-size: 14px;
+            color: white;
+            outline: none;
+            box-sizing: border-box;
+            &::placeholder {
+              color: rgba(255, 255, 255, 0.5);
+            }
+        }
+        button {
+            position: absolute;
+            right: 0;
+            background-color: $darkBlue;
+            border-radius: 50%;
+            top: 5px;
+            right: 5px;
+            border: none;
+            outline: none;
+            height: 31px;
+            width: 31px;
+        }
+    }
+    .site-info {
+        max-width: 150px;
+        margin-bottom: 50px;
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+    }
+}
+
+.footer-navigation {
+    > ul {
+        padding-left: 0;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        > li:nth-child(3),
+        > li:nth-child(5) {
+            padding-left: 1.5em;
+        }
+    }
+    .sub-menu-toggle {
+        display: none;
+    }
+    .sub-menu {
+        padding-left: 1.5em;
+    }
+}
+
+.copyright {
+    font-size: 15px;
+    opacity: .6;
+    margin: 60px auto 0;
+} 
