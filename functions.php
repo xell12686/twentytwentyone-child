@@ -1,5 +1,8 @@
 <?php
 
+/* Custom Elementor Widgets */
+
+require_once 'elementor-widgets.php';
 
 /* remove parent scripts  */
 function disable_parent_scripts() {

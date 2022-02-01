@@ -1,4 +1,4 @@
-.btn {
+.btn, .elementor-button {
     background-color: $darkBlue;
     color: white;
     padding: 10px 30px;
@@ -12,7 +12,8 @@
     &:hover, &:focus {
         background-color: $lightBlue;
     }
-    &.rounded {
+    &.rounded,
+    &.elementor-size-md {
         width: auto;
         font-size: 18px;
         border-radius: 30px;

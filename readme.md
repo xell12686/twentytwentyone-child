@@ -25,7 +25,7 @@ npm install -g sass
 To compile:
 
 ```sh
-sass --watch scss/style.scss:style.css
+sass scss/style.scss:style.css
 ```
 
 To watch for changes and auto compile:

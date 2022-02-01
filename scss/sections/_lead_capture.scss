@@ -1,4 +1,4 @@
-.lead-capture {
+.lead-capture, .section-lead-capture {
     color: $black;
     .content {
         padding: 70px 0;
@@ -93,12 +93,13 @@
     }
 }
 
-.wpcf7 {
+.wpcf7, .elementor-form {
     input, textarea {
         display: block;
         width: 100%;
     }
-    .wpcf7-form-control:not(.btn) {
+    .wpcf7-form-control:not(.btn),
+    .elementor-field:not(.elementor-button) {
         background: #FFFFFF;
         border: 1px solid #B6B6B6;
         box-sizing: border-box;
@@ -127,6 +128,40 @@
     &.submitting, &.validating {
         .wpcf7-spinner {
             display: block;
+        }
+    }
+}
+
+.elementor-form {
+    .elementor-field-group {
+        margin-bottom: 20px;
+    } 
+}
+
+.section-lead-capture {
+    @extend .wrapper;
+    .elementor-container {
+        padding: 70px 0;
+        display: flex;
+        flex-direction: row;
+        gap: 110px;
+        @media (max-width: 768px) {
+            .elementor-column {
+                width: 100%;
+                &:nth-child(1) {
+                    max-width: 600px;
+                }
+            }
+        }
+    }
+    .elementor-column:nth-child(2) {
+        .elementor-widget-form {
+            @extend .form-box;
+        }
+    }
+    .widget-graphics {
+        > .icons {
+            margin: 0;
         }
     }
 }

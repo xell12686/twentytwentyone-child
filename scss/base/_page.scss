@@ -3,8 +3,23 @@
 }
 
 .wrapper {
-    max-width: 1230px;
+    max-width: 1260px;
     margin: 0 auto;
     padding: 0 30px;
     position: relative;
+}
+
+#page {
+    .elementor-container {
+        max-width: none;
+        .elementor-widget-wrap {
+            padding: 0;
+        }
+    }
+}
+
+body.elementor-editor-active {
+    .entry-content {
+        .entry-footer { display: none;}
+    }
 }

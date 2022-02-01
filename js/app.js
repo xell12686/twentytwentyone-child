@@ -1,8 +1,15 @@
 
+console.log('init child theme scripts');
+
+function twentytwentyoneExpandSubMenu() {
+    console.log('expand menu clicked...');
+}
+
+
 const observerOptions = {
     root: null,
     threshold: 0,
-    rootMargin: '0px 0px -30px 0px'
+    rootMargin: '0px 0px -50px 0px'
 };
 
 const observer = new IntersectionObserver(entries => {
